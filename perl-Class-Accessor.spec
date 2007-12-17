@@ -15,7 +15,6 @@ Source:         http://www.cpan.org/modules/by-module/Class/%{module}-%{version}
 Buildrequires:  perl-devel
 %endif
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This module automagically generates accessor/mutators for your class.
