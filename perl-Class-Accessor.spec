@@ -1,10 +1,10 @@
 %define upstream_name    Class-Accessor
-%define upstream_version 0.34
+%define upstream_version 0.51
 
 Summary:	Automated accessor generation
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	14
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
