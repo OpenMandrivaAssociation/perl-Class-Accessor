@@ -1,14 +1,12 @@
 %define upstream_name    Class-Accessor
-%define upstream_version 0.51
-
 Summary:	Automated accessor generation
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	3
+Version:	0.51
+Release:	4
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Class-Accessor
-Source0:	https://cpan.metacpan.org/authors/id/K/KA/KASEI/Class-Accessor-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/K/KA/KASEI/Class-Accessor-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(Test::More)
@@ -18,7 +16,7 @@ BuildRequires:	perl-devel
 This module automagically generates accessor/mutators for your class.
 
 %prep
-%setup -qn %{upstream_name}-%{upstream_version}
+%setup -qn %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
